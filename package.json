@@ -4,7 +4,7 @@
   "description": "Just a simple AZLyrics.com scraper.",
   "main": "dist/index.js",
   "files": [
-    "./dist"
+    "dist"
   ],
   "scripts": {
     "build": "tsc",
