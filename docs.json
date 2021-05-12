@@ -1,0 +1,430 @@
+{
+	"id": 0,
+	"name": "AZLyrics Extractor - Documentation",
+	"kind": 0,
+	"kindString": "Project",
+	"flags": {},
+	"children": [
+		{
+			"id": 13,
+			"name": "GetTrackReturn",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 15,
+					"name": "artist",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "track.ts",
+							"line": 7,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 16,
+					"name": "lyrics",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "track.ts",
+							"line": 8,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 14,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "track.ts",
+							"line": 6,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						15,
+						16,
+						14
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "track.ts",
+					"line": 5,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "SearchOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 3,
+					"name": "page",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 6,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						3
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 5,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "SearchSongEnitity",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 7,
+					"name": "artist",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 12,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 6,
+					"name": "fullTitle",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 11,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 5,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 10,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 8,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 13,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						7,
+						6,
+						5,
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 9,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "version",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 4,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 17,
+			"name": "getTrack",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "track.ts",
+					"line": 16,
+					"character": 21
+				}
+			],
+			"signatures": [
+				{
+					"id": 18,
+					"name": "getTrack",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Fetches a song from AZLyrics.com",
+						"tags": [
+							{
+								"tag": "example",
+								"text": "const songs = await AZLyrics.getTrack(\"https://www.azlyrics.com/lyrics/alanwalker/faded.html\");\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 19,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "AZLyrics URL of the track"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 13,
+								"name": "GetTrackReturn"
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "search",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 22,
+					"character": 19
+				}
+			],
+			"signatures": [
+				{
+					"id": 10,
+					"name": "search",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Searches for songs in AZLyrics.com",
+						"tags": [
+							{
+								"tag": "example",
+								"text": "const songs = await AZLyrics.search(\"faded\");\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 11,
+							"name": "search",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "Search terms"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 12,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"text": "Options"
+							},
+							"type": {
+								"type": "reference",
+								"id": 2,
+								"name": "SearchOptions"
+							},
+							"defaultValue": "{}"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 4,
+									"name": "SearchSongEnitity"
+								}
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				13,
+				2,
+				4
+			]
+		},
+		{
+			"title": "Variables",
+			"kind": 32,
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				17,
+				9
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
+}
