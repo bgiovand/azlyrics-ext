@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "docs": "typedoc && node ./scripts/docs",
-    "test": "node test"
+    "docs": "npm run build && typedoc && node ./scripts/docs",
+    "test": "npm run build && node test"
   },
   "keywords": [
     "lyrics",
