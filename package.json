@@ -28,12 +28,12 @@
   "homepage": "https://azlyrics-ext.js.org",
   "devDependencies": {
     "@types/node": "^15.0.2",
-    "typedoc": "^0.20.36",
+    "typedoc": "^0.22.17",
     "typedoc-material-dark": "github:zyrouge/typedoc-material-dark",
-    "typescript": "^4.2.4"
+    "typescript": "^4.7.4"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.9"
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11"
   }
 }

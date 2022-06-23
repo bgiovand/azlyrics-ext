@@ -1,10 +1,12 @@
 const azlyrics = require("./dist");
 
-const search = "faded alan";
+const search = "the beatles yellow submarine";
 
 const test = async () => {
     const songs = await azlyrics.search(search);
-    console.log(`Results for search:`);
+    console.log(`Results for ${search}`);
+    console.log(songs);
+    
     console.log(
         songs
             .map((x, i) => `${i + 1}) ${x.fullTitle} - ${x.artist}`)
@@ -12,6 +14,7 @@ const test = async () => {
         "\n"
     );
 
+    
     const track = await azlyrics.getTrack(songs[0].url);
     console.log(
         `Lyrics for ${track.title} - ${track.artist} (${songs[0].url}):`

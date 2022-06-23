@@ -31,7 +31,7 @@ export const search = async (search: string, options: SearchOptions = {}) => {
 
     const url = `${constants.searchUrl}?q=${encodeURIComponent(
         search
-    )}&w=songs&p=${options.page || 1}`;
+    )}&w=songs&p=${options.page || 1}&x=757f045b6ab11cf5cd2345d28765250d42d13aac4767104571ca51885b9914e9`;
 
     let html: string;
     try {

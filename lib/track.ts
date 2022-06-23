@@ -6,6 +6,7 @@ export interface GetTrackReturn {
     title: string;
     artist: string;
     lyrics: string;
+    artworkURL: string;
 }
 
 /**
@@ -32,15 +33,18 @@ export const getTrack = async (url: string) => {
 
     try {
         const $ = cheerio.load(html);
+        const artwork = $(".album-image").attr('src');
         const rgt = $(".ringtone");
         const title = rgt.nextAll("b").first();
         const lyrics = rgt.nextAll("div").first();
         const artist = $(".lyricsh");
+        
 
         const result: GetTrackReturn = {
             title: title.text().trim().slice(1, -1),
             artist: artist.text().trim().slice(0, -7),
             lyrics: lyrics.text().trim(),
+            artworkURL: !artwork ? "" : `https://www.azlyrics.com${artwork}`,
         };
 
         return result;
