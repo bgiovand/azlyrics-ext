@@ -29,7 +29,7 @@ const search = (search, options = {}) => __awaiter(void 0, void 0, void 0, funct
         throw new Error(util_1.constants.typeErr("options", "object", typeof options));
     if (options.page && typeof options.page !== "number")
         throw new Error(util_1.constants.typeErr("options.page", "number", typeof options.page));
-    const url = `${util_1.constants.searchUrl}?q=${encodeURIComponent(search)}&w=songs&p=${options.page || 1}&x=757f045b6ab11cf5cd2345d28765250d42d13aac4767104571ca51885b9914e9`;
+    const url = `${util_1.constants.searchUrl}?q=${encodeURIComponent(search)}&w=songs&p=${options.page || 1}&x=0b9e5ef2d4fc5a5820f54324ea397cfdb58b1523f045edf536b1b547be94952c`;
     let html;
     try {
         const res = yield axios_1.default.get(url, {
